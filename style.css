@@ -1,0 +1,137 @@
+/* html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark */ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; vertical-align:baseline; background:transparent; } body { /* プロジェクトによって変動 */ min-width: 1000px; color: #000; line-height: 1.6; font-weight: 400; font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; width: 100%; font-smoothing: antialiased; font-variant-numeric: tabular-nums; /* safari hover対策 */ -webkit-font-smoothing: antialiased; } article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section { display:block; } ul, ol { list-style:none; } blockquote, q { quotes:none; } blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; } a { margin:0; padding:0; vertical-align:baseline; text-decoration: none; color: inherit; } /* change colours to suit your needs */ ins { background-color:#ff9; color:#000; text-decoration:none; } /* change colours to suit your needs */ mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; } del { text-decoration: line-through; } abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; } table { border-collapse:collapse; border-spacing:0; } /* change border colour to suit your needs */ hr { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0; } input, select { vertical-align:middle; } img { vertical-align: bottom; line-height: 1.0; } button { line-height: 1.0; background-color: transparent; border: none; cursor: pointer; outline: none; padding: 0; appearance: none; } 
+
+
+
+
+#header_text{
+    color: white;
+    background-color: #009DFF;
+    font-size: 40px;
+    height: 110px;
+    line-height: 110px;
+    padding-left: 40px;
+}
+
+#main-content{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+#left-side{
+    background-color: #E3E3E3;
+    width: 15%;
+}
+
+#center-content{
+    width: 100px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title-text{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.page-button{
+    text-align: center;
+    height: 110px;
+    width: 400px;
+    margin: 20px;
+    border-radius:30px;
+}
+
+#start-button{
+    background-color: #009DFF;
+}
+#howtouse-button{
+    background-color: #FF0303;
+}
+#language-setting-button{
+    background-color: #28C18B;
+}
+
+button{
+    line-height: 110px;
+    font-size: 40px;
+    color: white;
+}
+
+#right-side{
+    background-color: #E3E3E3;
+    width: 15%;
+}
+
+
+
+
+
+
+/* player-seting-page.htmlに当てるやつ */
+
+
+.players-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.player-form-text{
+    
+    font-size: 50px;
+    vertical-align: middle;
+    font-weight: bold;
+    
+}
+.player-form{
+    width: 550px;
+    height: 80px;
+    vertical-align: middle;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+/* gamesetting */
+
+.game-setting-text{
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.game-setting-radio{
+    font-size: 30px;
+    margin-left: 100px;
+}
+input[type=radio] {
+    width: 30px;
+    height: 30px;   
+}
+
+label {
+    display: inline-block;
+    font-size: 30px;
+}
+
+#back-button{
+    background-color: gray;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    border-radius:30px;
+    margin: 20px;  
+}
+
+.radio-input-area{
+    margin-bottom: 20px;
+}
+
+
+
+
+

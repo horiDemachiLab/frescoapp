@@ -1,0 +1,285 @@
+/* html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark */ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; vertical-align:baseline; background:transparent; } body { /* プロジェクトによって変動 */ min-width: 1000px; color: #000; line-height: 1.6; font-weight: 400; font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; width: 100%; font-smoothing: antialiased; font-variant-numeric: tabular-nums; /* safari hover対策 */ -webkit-font-smoothing: antialiased; } article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section { display:block; } ul, ol { list-style:none; } blockquote, q { quotes:none; } blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; } a { margin:0; padding:0; vertical-align:baseline; text-decoration: none; color: inherit; } /* change colours to suit your needs */ ins { background-color:#ff9; color:#000; text-decoration:none; } /* change colours to suit your needs */ mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; } del { text-decoration: line-through; } abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; } table { border-collapse:collapse; border-spacing:0; } /* change border colour to suit your needs */ hr { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0; } input, select { vertical-align:middle; } img { vertical-align: bottom; line-height: 1.0; } button { line-height: 1.0; background-color: transparent; border: none; cursor: pointer; outline: none; padding: 0; appearance: none; } 
+
+#header_text{
+    color: white;
+    background-color: #009DFF;
+    font-size: 40px;
+    height: 110px;
+    line-height: 110px;
+    padding-left: 40px;
+}
+
+#main-content{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+#left-side{
+    background-color: #E3E3E3;
+    width: 15%;
+}
+
+#center-content{
+    width: 100px;
+    flex: 1;
+    display: flex;
+    
+}
+
+.page-title-text{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#right-side{
+    background-color: #E3E3E3;
+    width: 15%;
+}
+
+
+.left-content{
+    width: 80%;
+    height: 100%;
+}
+
+.right-content{
+    border: 1px gray solid;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+}
+
+.left-top{
+    display: flex;
+    height: 20%;
+}
+
+
+.fail-num-area{
+    border: 1px gray solid;
+    box-sizing: border-box;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fail-num-area p{
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+.time-area{
+    border: 1px gray solid;
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-area p{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.average-speed-area{
+    border: 1px gray solid;
+    box-sizing: border-box;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.average-speed-area p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.left-middle{
+    display: flex;
+    height: 60%;
+}
+
+.left-middle-left{
+    width: 25%;
+    color: red;
+}
+.player-name{
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px gray solid;
+    box-sizing: border-box;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.player-score{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px gray solid;
+    box-sizing: border-box;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score-area{
+    font-size: 60px;
+}
+
+.player-speed{
+    font-size: 15px;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    font-weight: bold;
+}
+
+.player-average-speed{
+    width: 50%;
+    border: 1px gray solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player-max-speed{
+    width: 50%;
+    border: 1px gray solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.speed-area{
+    font-size: 30px;
+}
+
+
+.left-middle-center{
+    width: 50%;
+    border: 1px gray solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ball-speed-text{
+    font-size: 50px;
+}
+
+.ball-speed-num{
+    font-size: 70px;
+}
+
+.left-middle-right{
+    color: blue;
+    width: 25%;
+}
+
+
+.left-bottom{
+    height: 20%;
+    border: 1px gray solid;
+    box-sizing: border-box;
+}
+
+
+.total-score{
+    height: 80%;
+    font-size: 80px;
+    border: 1px gray solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.total-score-label{
+    height: 20%;
+    font-size: 30px;
+    border: 1px gray solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+.game-setting-text{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.game-setting-radio{
+    font-size: 20px;
+}
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+.radio-input-area{
+    height: 70%;
+}
+
+
+.page-button{
+    text-align: center;
+    height: 50px;
+    width: 170px;
+    margin: 10px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button{
+    background-color: #009DFF;
+}
+#stop-button{
+    background-color: #FF0303;
+}
+button{
+    line-height: 20px;
+    font-size: 20px;
+    color: white;
+}

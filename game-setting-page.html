@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Frescobol Speed Championship System</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="page">
+		<header>
+            <div id="header_text">
+                <p>Frescobol Speed game System</p>
+
+            </div>
+        </header>
+        <div id="main-content">
+            <div id="left-side">
+            </div>
+            <div id="center-content">
+                <p class="page-title-text">ゲーム設定</p>                
+                <div class="radio-input-area">
+                    <p class="game-setting-text">打球開始プレイヤー</p>
+                    <label><input type="radio" name="start-player" value="player1" class="game-setting-radio"> プレイヤー1</label><br>
+                    <label><input type="radio" name="start-player" value="player2" class="game-setting-radio"> プレイヤー2</label>
+                </div>
+                <div class="radio-input-area">
+                    <p class="game-setting-text">プレイヤー間距離</p>
+                    <label><input type="radio" name="player-distance" value="はい" class="game-setting-radio"> 　7m</label><br>
+                    <label><input type="radio" name="player-distance" value="いいえ" class="game-setting-radio"> 　8m</label>
+                </div>
+                <button type="button" class="page-button" id="start-button" onclick="location.href='play-page.html'">ゲーム開始</button>
+                <button type="button" class="back-button" id="back-button" onclick="location.href='player-setting-page.html'">戻る</button>
+            </div>
+            <div id="right-side">
+
+            </div>
+        </div>
+    </div>
+    
+
+        
+
+</body>
+</html>
