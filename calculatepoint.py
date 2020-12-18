@@ -1,6 +1,7 @@
 
 
 
+##時速による加点
 def additional_point_by_each_speed(speed):
     if speed <= 50:
         return speed
@@ -15,6 +16,8 @@ def additional_point_by_each_speed(speed):
     elif speed > 90:
         return speed * 1.9
 
+
+##落球による減点
 def substracting_point_by_drop(drop_num):
     if drop_num <=5:
         return 0
@@ -44,45 +47,100 @@ def substracting_point_by_drop(drop_num):
 
 
 
-#平均時速、最大時速、アタック数による加点に関する以下の6メソッドは未確定のため現状仮置き。
+##平均時速による加点
+#２選手の平均時速による加点
 def additional_point_by_both_player_average_speed(speed):
-    if speed <= 70:
-        return 0
-    elif speed >70:
-        return 1000 
+    return 0
 
-def additional_point_by_each_player_average_speed(speed):
-    if speed <= 70:
-        return 0
-    elif speed >70:
+#playerAの平均時速による加点
+def additional_point_by_a_player_average_speed(speed):
+    if speed <= 50:
         return 1000
+    elif speed >50 and speed <=60:
+        return 2000
+    elif speed >60 and speed <=70:
+        return 3000
+    elif speed >70 and speed <=80:
+        return 4000
+    elif speed >80 and speed <=90:
+        return 5000
+    elif speed > 90:
+        return 6000
 
+#playerBの平均時速による加点
+def additional_point_by_b_player_average_speed(speed):
+    if speed <= 50:
+        return 1000
+    elif speed >50 and speed <=60:
+        return 2000
+    elif speed >60 and speed <=70:
+        return 3000
+    elif speed >70 and speed <=80:
+        return 4000
+    elif speed >80 and speed <=90:
+        return 5000
+    elif speed > 90:
+        return 6000
+
+
+##最大時速による加点
+#２選手の最大時速による加点
 def additional_point_by_both_player_max_speed(speed):
-    if speed <= 90:
-        return 0
-    elif speed >90:
-        return 1000 
+    return 0
 
-def additional_point_by_each_player_max_speed(speed):
-    if speed <= 90:
+#playerAの最大時速による加点
+def additional_point_by_a_player_max_speed(speed):
+    if speed <=70:
         return 0
-    elif speed >90:
-        return 1000
+    elif speed >70 and speed <=80:
+        return 4000
+    elif speed >80 and speed <=90:
+        return 5000
+    elif speed > 90:
+        return 6000
 
+#playerBの最大時速による加点
+def additional_point_by_b_player_max_speed(speed):
+    if speed <=70:
+        return 0
+    elif speed >70 and speed <=80:
+        return 4000
+    elif speed >80 and speed <=90:
+        return 5000
+    elif speed > 90:
+        return 6000
+
+##アタック数による加点
+#２選手のアタック数による加点
 def additional_point_by_both_player_attack_num(num):
-    if num <= 100:
+    return 0
+
+#playerAのアタック数による加点
+def additional_point_by_a_player_attack_num(num):
+    if num <= 150:
         return 0
-    elif num >100:
+    elif num >150 and num <= 200:
         return 1000
+    elif num >150 and num <= 200:
+        return 2000
+    elif num >200 and num <= 250:
+        return 3000
+    elif num >250 and num <= 300:
+        return 4000
+    elif num > 300:
+        return 5000
 
-def additional_point_by_each_player_attack_num(num):
-    if num <= 100:
+#playerBのアタック数による加点
+def additional_point_by_a_player_attack_num(num):
+    if num <= 150:
         return 0
-    elif num >100:
+    elif num >150 and num <= 200:
         return 1000
-
-
-
-print(speed_additional_point(60))
-
-
+    elif num >150 and num <= 200:
+        return 2000
+    elif num >200 and num <= 250:
+        return 3000
+    elif num >250 and num <= 300:
+        return 4000
+    elif num > 300:
+        return 5000
